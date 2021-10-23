@@ -129,19 +129,10 @@ def attempt(list_cumulative, list_roulette):
 
 if __name__ == "__main__":
 
-    i = 1
     x_graph = []
     y_graph = []
-    x_graph.append(i)
-    a = levy_function()
-    y_graph.append(a)
-    c = prob_calc(a)
-    d = roulette_prob()
-    e = roulette(c)
-    attempt(e, d)
 
-    while round(a[0], 1) != 0:
-        i = i + 1
+    for i in range(1,31):
         x_graph.append(i)
         a = levy_function()
         y_graph.append(a)
